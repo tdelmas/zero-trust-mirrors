@@ -4,8 +4,8 @@
 	function save(fileName, blob) {
 		// maybe we should do like http://danml.com/download.html for better compatibility
 		if (navigator.msSaveBlob){ // For ie and Edge
-            return navigator.msSaveBlob(blob, fileName);
-        }
+			return navigator.msSaveBlob(blob, fileName);
+		}
 		var a = document.createElement("a");
 		var url = window.URL.createObjectURL(blob);
 		a.style = "display: none"; 
